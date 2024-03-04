@@ -31,3 +31,15 @@ body {
     text-wrap: balance;
   }
 } */
+
+
+body {
+  background-color: #a8dcf1;
+}
+
+
+.headerTitle h1 {
+  font-size: x-large;
+  font-weight: bolder;
+  color: #e8e8e8;
+}

@@ -10,6 +10,9 @@ module.exports = withMT({
   ],
   theme: {
     extend: {
+      fontFamily: {
+        euro: ['var(--eurobold)']
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
