@@ -20,7 +20,7 @@ function InputAbsent() {
 
     return(
         <div className="container">
-            <div className="grid grid-cols-3">
+            <div className="grid grid-cols-3 gap-4">
                 <Popover placement="bottom">
                     <PopoverHandler>
                     <Input
@@ -70,6 +70,31 @@ function InputAbsent() {
                     />
                     </PopoverContent>
                 </Popover>
+                <div className="Dropdown">
+                    <select name="Workers" id="workers">
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                        <option value="1">Test 1</option>
+                    </select>
+                </div>
             </div>
         </div>
     )

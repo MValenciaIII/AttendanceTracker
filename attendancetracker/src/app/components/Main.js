@@ -8,7 +8,7 @@ function Main() {
 
     return(
         <div className="container">
-            <div className="grid grid-cols-2 gap4">
+            <div className="grid grid-cols-2 gap-4">
                 <div>
                     <InputAbsent />
                 </div>

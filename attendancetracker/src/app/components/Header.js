@@ -18,7 +18,7 @@ function Header() {
         <div className="container">
             <div className="grid grid-cols-2 gap-4 ">
                 <div>
-                    <Image src={MuralLOGO} height="60px" width="60px" />
+                    <Image className='' src={MuralLOGO} height={100} width={300} fill={false}/>
                 </div>
                 <div className='headerTitle '>
                     <h1 className={`align-middle ${EuroBold} `}>MCA Gulf Coast Attendence Tracker</h1>
