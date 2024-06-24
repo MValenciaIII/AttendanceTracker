@@ -3,26 +3,22 @@ import Image from "next/image";
 import localFont from "next/font/local"
 
 
-const EuroBold = localFont({ src: [
-    {
-      path:'../Eurostile-Bold Regular.ttf',
-     
-    }
-  ]  
-  })
+const EuroBold = localFont({ src:'../Eurostile-Bold Regular.ttf'})
+const Gothic = localFont({ src: '../Trade Gothic LT Std Condensed No. 18.otf'})
 
 function Header() {
 
 
     return(
         <div className="container">
-            <div className="grid grid-cols-2 gap-4 ">
+            <div className="grid grid-cols-1 lg:grid-cols-3 gap-4 ">
                 <div>
-                    <Image className='' src={MuralLOGO} height={100} width={300} fill={false}/>
+                    <Image className='object-fill' src={MuralLOGO}  fill={false}/>
                 </div>
-                <div className='headerTitle '>
-                    <h1 className={`align-middle ${EuroBold} `}>MCA Gulf Coast Attendence Tracker</h1>
+                <div className='headerTitle text-center '>
+                    <h1 className={`align-middle ${EuroBold.className} text-4xl font-extrabold `}>MCA Gulf Coast Attendence Tracker</h1>
                 </div>
+                
             </div>
         </div>
     )

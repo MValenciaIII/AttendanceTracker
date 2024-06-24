@@ -39,7 +39,11 @@ body {
 
 
 .headerTitle h1 {
-  font-size: x-large;
-  font-weight: bolder;
-  color: #e8e8e8;
+
+  color: #f7f7f7;
+}
+
+.statDisplay p{
+  color: #f7f7f7;
+
 }

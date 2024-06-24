@@ -8,13 +8,9 @@ function Main() {
 
     return(
         <div className="container">
-            <div className="grid grid-cols-2 gap-4">
-                <div>
+            <div className="grid grid-cols-1 gap-4">
                     <InputAbsent />
-                </div>
-                <div>
                     <StatDisplay />
-                </div>
             </div>
         </div>
     )
