@@ -47,3 +47,19 @@ body {
   color: #f7f7f7;
 
 }
+
+.currentStatus {
+  background-color: greenyellow;
+  border-radius: 100%;
+  width: 80%;
+}
+
+.stat-header {
+  background-color: #bcbcbc;
+
+}
+
+.statItem {
+  background-color: rgb(212, 212, 212);
+
+}

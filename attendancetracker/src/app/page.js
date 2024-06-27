@@ -5,16 +5,11 @@ import localFont from "next/font/local"
 
 
 
-const EuroBold = localFont({ src: [
-  {
-    path:'./Eurostile-Bold Regular.ttf',
-  }
-] , variable: '--eurobold' 
-})
+
 
 export default function Home() {
   return (
-    <div className={`container ${EuroBold.variable}`}>
+    <div className={`container `}>
         <Header />
         <Main />
     </div>
