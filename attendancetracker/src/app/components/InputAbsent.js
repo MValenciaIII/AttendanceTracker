@@ -42,7 +42,7 @@ function InputAbsent() {
                             caption_label: "text-sm font-medium text-gray-900",
                             nav: "flex items-center",
                             nav_button:
-                                "h-6 w-6 bg-transparent hover:bg-blue-gray-50 p-1 rounded-md transition-colors duration-300",
+                                "h-6 w-6  hover:bg-blue-gray-50 p-1 rounded-md transition-colors duration-300",
                             nav_button_previous: "absolute left-1.5",
                             nav_button_next: "absolute right-1.5",
                             table: "w-full border-collapse",
@@ -73,7 +73,7 @@ function InputAbsent() {
                     </Popover>
                 </div>
                 <div className="dropdownworkers">
-                    <select name="Workers" id="workers">
+                    <select className='' name="Workers" id="workers">
                         <option value="1">Test 1</option>
                         <option value="1">Test 1</option>
                         <option value="1">Test 1</option>
