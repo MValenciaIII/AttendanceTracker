@@ -1,9 +1,22 @@
+'use client'
 import localFont from "next/font/local"
 import StatDisplayRow from "./StatDisplayRow"
 
 const EuroBold = localFont({ src:'../Eurostile-Bold Regular.ttf'})
 
-function StatDisplay() {
+function StatDisplay(props) {
+    console.log(props)
+    const items = props.fakeAPI?.map(currentItems => {
+        return <StatDisplayRow 
+        fName={currentItems.fname} 
+        lName={currentItems.lname} 
+        absences={currentItems.absences} 
+        tardies={currentItems.tardy} 
+        nocalls={currentItems.nocalls} 
+        datesMissed={currentItems.datesMissed} 
+        currentStatus={currentItems.currentStatus}
+        />
+    })
 
     return(
         <div className="container statDisplay">
@@ -17,7 +30,7 @@ function StatDisplay() {
                     </div>
                     <div className="currentStatusHeader text-lg text-center"><p> Status</p></div>
                 </div>
-                <StatDisplayRow />
+                {items}
             
             </div>
             {/* <table className="table-auto">

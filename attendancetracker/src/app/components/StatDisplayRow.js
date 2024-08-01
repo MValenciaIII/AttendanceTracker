@@ -1,15 +1,20 @@
+'use client'
+
 import localFont from "next/font/local"
 
 
 const EuroBold = localFont({ src:'../Eurostile-Bold Regular.ttf'})
 
-function StatDisplayRow() {
+function StatDisplayRow(props) {
+    
+    console.log(props)
+
 
 
     return (
         <div className={`statItem grid grid-cols-7 ${EuroBold.className} shadow-md`}>
                     <div className="name col-span-2 text-center font-bold text-md">
-                        <p>Firstname Lastname</p>
+                        <p>{props.fName} {props.lName}</p>
                     </div>
                     <div className="attendanceStat grid grid-cols-3 col-span-4 place-items-center">
                         <div className="absences text-center font-bold text-md">
