@@ -6,7 +6,7 @@ const EuroBold = localFont({ src:'../Eurostile-Bold Regular.ttf'})
 
 function StatDisplay(props) {
     console.log(props)
-    const items = props.fakeAPI?.map(currentItems => {
+    const items = props.apiData?.map(currentItems => {
         return <StatDisplayRow 
         fName={currentItems.fname} 
         lName={currentItems.lname} 

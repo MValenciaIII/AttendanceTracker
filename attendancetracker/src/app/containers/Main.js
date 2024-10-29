@@ -2,46 +2,36 @@
 import InputAbsent from "../components/InputAbsent"
 import StatDisplay from "../components/StatDisplay"
 import React from "react"
+import { gql, useQuery } from "@apollo/client"
+import client from '../static/api'
 
+const GET_STUDENTS = gql`
+query MyQuery {
+  students {
+    fname
+    id
+    lname
+    nocalls
+    tardy
+    absences
+    datesMissed
+  }
+}
+`;
 
 function Main() {
-    //STORE DATA IN USESTATE
-    const [workers, setWorkers] = React.useState([
-    {
-        fname: 'Margarito',
-        lname: 'Valencia',
-        absences: 0,
-        tardy: 0,
-        nocalls: 0, 
-        currentStatus: 0,
-        datesMissed: ['2000-01-31']
-    },
-    {
-        fname: 'Zachary',
-        lname: 'Dubroc',
-        absences: 2,
-        tardy: 1,
-        nocalls: 1, 
-        currentStatus: 2,
-        datesMissed: ['2000-01-31']
-    },
-    {
-        fname: 'Sara',
-        lname: 'Dedeaux',
-        absences: 5,
-        tardy: 2,
-        nocalls: 0, 
-        currentStatus: 1,
-        datesMissed: ['2000-01-31']
-    }
-])
+    const { loading, error, data } = useQuery(GET_STUDENTS, {client});
 
+    
+
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
 
     return(
         <div className="container">
             <div className="grid grid-cols-1 gap-4">
                     <InputAbsent />
-                    <StatDisplay fakeAPI={workers} fakeApiFunc={setWorkers} />
+                    <StatDisplay apiData={data.students}  />
             </div>
         </div>
     )
