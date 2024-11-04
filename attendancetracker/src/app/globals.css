@@ -52,6 +52,7 @@ body {
   background-color: greenyellow;
   border-radius: 100%;
   width: 80%;
+  padding: 1.5rem 0px;
 }
 
 .stat-header {

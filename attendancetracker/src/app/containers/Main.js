@@ -15,6 +15,7 @@ query MyQuery {
     tardy
     absences
     datesMissed
+    currentStatus
   }
 }
 `;

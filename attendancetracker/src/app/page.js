@@ -12,6 +12,7 @@ export default function Home() {
     <div className={`container `}>
         <Header />
         <Main />
+        
     </div>
   );
 }
